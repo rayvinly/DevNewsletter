@@ -7,38 +7,37 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
-
-      <header>
-        <h1>Devnewsletter</h1>
-        <p>DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list.</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/rayvinly/DevNewsletter" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/rayvinly/DevNewsletter/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/rayvinly/DevNewsletter/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/rayvinly/DevNewsletter">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/rayvinly/DevNewsletter/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/rayvinly/DevNewsletter/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+
       <section>
+        <div id="title">
+          <h1>Devnewsletter</h1>
+          <p>DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/rayvinly">rayvinly</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
         <h1>DevNewsletter overview</h1>
 
 <p>DevNewsletter allows your app users to subscribe to your MailChimp mailing list. It uses <a href="https://github.com/kstenerud/iOS-Universal-Framework" title="iOS Universal Framework">kstenerud’s awesome iOS Universal Framework project</a> to build universal frameworks that can be shared between iOS and Mac apps. You can find <a href="http://rayvinly.com/how-to-build-a-truly-universal-framework-for-ios-and-mac-with-just-a-single-codebase/" title="How to build a truly iOS universal framework for iOS and Mac with just a single codebase">more details here</a>. The technique used here was used to build <a href="http://bitly.com/144jLLF" title="DevBase - a database app in the App Store for iOS and Mac app development using Apple's Core Data and SQLite technologies">DevBase</a> - a database app in the <a href="http://bitly.com/14dSgfY" title="DevBase is the Mac App Store">Mac App Store</a> for iOS and Mac app development using Apple's Core Data and SQLite technologies.</p>
@@ -111,10 +110,7 @@ DevNewsMac is a sample iOS project that integrated the DevNews framework for the
 <p>Copyright © 2013 <a href="http://rayvinly.com/" title="Raymond Law | Rails and iOS entrepreneur with a passion for badminton">Raymond Law</a>. All rights reserved.
 This project is licensed under the <a href="http://opensource.org/licenses/mit-license.php" title="MIT License">MIT License</a>.</p>
       </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/rayvinly">rayvinly</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
-      </footer>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
