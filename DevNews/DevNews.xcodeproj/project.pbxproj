@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		714FA17917135EE6002DA0E4 /* DevNewsLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 714FA17717135EE6002DA0E4 /* DevNewsLoader.h */; };
+		714FA17A17135EE6002DA0E4 /* DevNewsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 714FA17817135EE6002DA0E4 /* DevNewsLoader.m */; };
+		714FA1C417137F6B002DA0E4 /* DevNews_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714FA1C317137F6A002DA0E4 /* DevNews_iPad.storyboard */; };
+		714FA1FB17138E1D002DA0E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 714FA1F917138E1D002DA0E4 /* InfoPlist.strings */; };
+		714FA20D17138F10002DA0E4 /* ChimpKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C75E5C170FFB3C0017BC67 /* ChimpKit.m */; };
+		714FA20E17138F10002DA0E4 /* DevNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BA964E1710135900ED1CD3 /* DevNews.m */; };
+		714FA20F17138F10002DA0E4 /* DevNewsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 714FA17817135EE6002DA0E4 /* DevNewsLoader.m */; };
+		714FA21017138F2B002DA0E4 /* DevNews.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BA964D1710135900ED1CD3 /* DevNews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		714FA21117138F3C002DA0E4 /* ChimpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C75E5B170FFB3C0017BC67 /* ChimpKit.h */; };
+		714FA21217138F43002DA0E4 /* DevNewsLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 714FA17717135EE6002DA0E4 /* DevNewsLoader.h */; };
+		714FA219171395F2002DA0E4 /* DevNewsSubscribeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714FA216171395F2002DA0E4 /* DevNewsSubscribeWindowController.m */; };
+		71A3B9EE1714DE9300B98594 /* DevNewsSubscribeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BA964F1710135900ED1CD3 /* DevNewsSubscribeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BA96511710135900ED1CD3 /* DevNews_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BA964C1710135900ED1CD3 /* DevNews_iPhone.storyboard */; };
+		71BA96521710135900ED1CD3 /* DevNews.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BA964D1710135900ED1CD3 /* DevNews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BA96531710135900ED1CD3 /* DevNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BA964E1710135900ED1CD3 /* DevNews.m */; };
+		71BA96541710135900ED1CD3 /* DevNewsSubscribeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BA964F1710135900ED1CD3 /* DevNewsSubscribeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BA96551710135900ED1CD3 /* DevNewsSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BA96501710135900ED1CD3 /* DevNewsSubscribeViewController.m */; };
+		71C75E4B170FFADA0017BC67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71C75E49170FFADA0017BC67 /* InfoPlist.strings */; };
+		71C75E6F170FFB3C0017BC67 /* ChimpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C75E5B170FFB3C0017BC67 /* ChimpKit.h */; };
+		71C75E70170FFB3C0017BC67 /* ChimpKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C75E5C170FFB3C0017BC67 /* ChimpKit.m */; };
+		71C75E71170FFB3C0017BC67 /* CKAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C75E5D170FFB3C0017BC67 /* CKAuthViewController.h */; };
+		71C75E72170FFB3C0017BC67 /* CKAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C75E5E170FFB3C0017BC67 /* CKAuthViewController.m */; };
+		71C75E73170FFB3C0017BC67 /* SubscribeAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C75E5F170FFB3C0017BC67 /* SubscribeAlertView.h */; };
+		71C75E74170FFB3C0017BC67 /* SubscribeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C75E60170FFB3C0017BC67 /* SubscribeAlertView.m */; };
+		71C75E75170FFB3C0017BC67 /* CKAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71C75E62170FFB3C0017BC67 /* CKAuthViewController.xib */; };
+		71C75EB8170FFB910017BC67 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C75E9D170FFB910017BC67 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71C75EB9170FFB910017BC67 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C75E9E170FFB910017BC67 /* MBProgressHUD.m */; };
+		71E2477C1714E0F300B8CF74 /* DevNewsSubscribeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714FA217171395F2002DA0E4 /* DevNewsSubscribeWindowController.xib */; };
+		71E247811714E28D00B8CF74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B9D51714CD0100B98594 /* Foundation.framework */; };
+		71E247821714E28D00B8CF74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B9D71714CD0800B98594 /* UIKit.framework */; };
+		71E247831714E29300B8CF74 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B9D91714CE1400B98594 /* AppKit.framework */; };
+		71E247841714E29300B8CF74 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B9DF1714CEB800B98594 /* Cocoa.framework */; };
+		71E247851714E29300B8CF74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3B9DB1714CE4C00B98594 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		714FA17717135EE6002DA0E4 /* DevNewsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevNewsLoader.h; sourceTree = "<group>"; };
+		714FA17817135EE6002DA0E4 /* DevNewsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevNewsLoader.m; sourceTree = "<group>"; };
+		714FA1C317137F6A002DA0E4 /* DevNews_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DevNews_iPad.storyboard; sourceTree = "<group>"; };
+		714FA1EF17138E1D002DA0E4 /* DevNews Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "DevNews Mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		714FA1F817138E1D002DA0E4 /* DevNews Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DevNews Mac-Info.plist"; sourceTree = "<group>"; };
+		714FA1FA17138E1D002DA0E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		714FA1FC17138E1D002DA0E4 /* DevNews Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevNews Mac-Prefix.pch"; sourceTree = "<group>"; };
+		714FA215171395F2002DA0E4 /* DevNewsSubscribeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevNewsSubscribeWindowController.h; sourceTree = "<group>"; };
+		714FA216171395F2002DA0E4 /* DevNewsSubscribeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevNewsSubscribeWindowController.m; sourceTree = "<group>"; };
+		714FA217171395F2002DA0E4 /* DevNewsSubscribeWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevNewsSubscribeWindowController.xib; sourceTree = "<group>"; };
+		71A3B9D51714CD0100B98594 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71A3B9D71714CD0800B98594 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		71A3B9D91714CE1400B98594 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		71A3B9DB1714CE4C00B98594 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71A3B9DF1714CEB800B98594 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		71BA964C1710135900ED1CD3 /* DevNews_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DevNews_iPhone.storyboard; sourceTree = "<group>"; };
+		71BA964D1710135900ED1CD3 /* DevNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevNews.h; sourceTree = "<group>"; };
+		71BA964E1710135900ED1CD3 /* DevNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevNews.m; sourceTree = "<group>"; };
+		71BA964F1710135900ED1CD3 /* DevNewsSubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevNewsSubscribeViewController.h; sourceTree = "<group>"; };
+		71BA96501710135900ED1CD3 /* DevNewsSubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevNewsSubscribeViewController.m; sourceTree = "<group>"; };
+		71C75E41170FFADA0017BC67 /* DevNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; name = DevNews.framework; path = "DevNews iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C75E48170FFADA0017BC67 /* DevNews iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DevNews iOS-Info.plist"; sourceTree = "<group>"; };
+		71C75E4A170FFADA0017BC67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		71C75E4C170FFADA0017BC67 /* DevNews iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevNews iOS-Prefix.pch"; sourceTree = "<group>"; };
+		71C75E5B170FFB3C0017BC67 /* ChimpKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChimpKit.h; sourceTree = "<group>"; };
+		71C75E5C170FFB3C0017BC67 /* ChimpKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChimpKit.m; sourceTree = "<group>"; };
+		71C75E5D170FFB3C0017BC67 /* CKAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAuthViewController.h; sourceTree = "<group>"; };
+		71C75E5E170FFB3C0017BC67 /* CKAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAuthViewController.m; sourceTree = "<group>"; };
+		71C75E5F170FFB3C0017BC67 /* SubscribeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeAlertView.h; sourceTree = "<group>"; };
+		71C75E60170FFB3C0017BC67 /* SubscribeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeAlertView.m; sourceTree = "<group>"; };
+		71C75E62170FFB3C0017BC67 /* CKAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAuthViewController.xib; sourceTree = "<group>"; };
+		71C75E9D170FFB910017BC67 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		71C75E9E170FFB910017BC67 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		714FA1EB17138E1D002DA0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E247831714E29300B8CF74 /* AppKit.framework in Frameworks */,
+				71E247841714E29300B8CF74 /* Cocoa.framework in Frameworks */,
+				71E247851714E29300B8CF74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C75E3B170FFADA0017BC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E247811714E28D00B8CF74 /* Foundation.framework in Frameworks */,
+				71E247821714E28D00B8CF74 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		714FA1F617138E1D002DA0E4 /* DevNews Mac */ = {
+			isa = PBXGroup;
+			children = (
+				714FA215171395F2002DA0E4 /* DevNewsSubscribeWindowController.h */,
+				714FA216171395F2002DA0E4 /* DevNewsSubscribeWindowController.m */,
+				714FA217171395F2002DA0E4 /* DevNewsSubscribeWindowController.xib */,
+				714FA1F717138E1D002DA0E4 /* Supporting Files */,
+			);
+			path = "DevNews Mac";
+			sourceTree = "<group>";
+		};
+		714FA1F717138E1D002DA0E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				714FA1F817138E1D002DA0E4 /* DevNews Mac-Info.plist */,
+				714FA1F917138E1D002DA0E4 /* InfoPlist.strings */,
+				714FA1FC17138E1D002DA0E4 /* DevNews Mac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		714FA20317138E46002DA0E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				71A3B9D51714CD0100B98594 /* Foundation.framework */,
+				71A3B9D71714CD0800B98594 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		714FA20417138E4F002DA0E4 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				71A3B9D91714CE1400B98594 /* AppKit.framework */,
+				71A3B9DF1714CEB800B98594 /* Cocoa.framework */,
+				71A3B9DB1714CE4C00B98594 /* Foundation.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		71C75E34170FFADA0017BC67 = {
+			isa = PBXGroup;
+			children = (
+				71C75E52170FFB3C0017BC67 /* ChimpKit2 */,
+				71C75E81170FFB910017BC67 /* MBProgressHUD */,
+				71C75E46170FFADA0017BC67 /* DevNews iOS */,
+				714FA1F617138E1D002DA0E4 /* DevNews Mac */,
+				71C75E43170FFADA0017BC67 /* Frameworks */,
+				71C75E42170FFADA0017BC67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71C75E42170FFADA0017BC67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E41170FFADA0017BC67 /* DevNews.framework */,
+				714FA1EF17138E1D002DA0E4 /* DevNews Mac.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71C75E43170FFADA0017BC67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				714FA20317138E46002DA0E4 /* iOS */,
+				714FA20417138E4F002DA0E4 /* Mac */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71C75E46170FFADA0017BC67 /* DevNews iOS */ = {
+			isa = PBXGroup;
+			children = (
+				71BA964C1710135900ED1CD3 /* DevNews_iPhone.storyboard */,
+				714FA1C317137F6A002DA0E4 /* DevNews_iPad.storyboard */,
+				71BA964D1710135900ED1CD3 /* DevNews.h */,
+				71BA964E1710135900ED1CD3 /* DevNews.m */,
+				71BA964F1710135900ED1CD3 /* DevNewsSubscribeViewController.h */,
+				71BA96501710135900ED1CD3 /* DevNewsSubscribeViewController.m */,
+				714FA17717135EE6002DA0E4 /* DevNewsLoader.h */,
+				714FA17817135EE6002DA0E4 /* DevNewsLoader.m */,
+				71C75E47170FFADA0017BC67 /* Supporting Files */,
+			);
+			name = "DevNews iOS";
+			path = DevNews;
+			sourceTree = "<group>";
+		};
+		71C75E47170FFADA0017BC67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E48170FFADA0017BC67 /* DevNews iOS-Info.plist */,
+				71C75E49170FFADA0017BC67 /* InfoPlist.strings */,
+				71C75E4C170FFADA0017BC67 /* DevNews iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71C75E52170FFB3C0017BC67 /* ChimpKit2 */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E59170FFB3C0017BC67 /* Core */,
+			);
+			path = ChimpKit2;
+			sourceTree = "<group>";
+		};
+		71C75E59170FFB3C0017BC67 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E5A170FFB3C0017BC67 /* Classes */,
+				71C75E61170FFB3C0017BC67 /* Nibs */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		71C75E5A170FFB3C0017BC67 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E5B170FFB3C0017BC67 /* ChimpKit.h */,
+				71C75E5C170FFB3C0017BC67 /* ChimpKit.m */,
+				71C75E5D170FFB3C0017BC67 /* CKAuthViewController.h */,
+				71C75E5E170FFB3C0017BC67 /* CKAuthViewController.m */,
+				71C75E5F170FFB3C0017BC67 /* SubscribeAlertView.h */,
+				71C75E60170FFB3C0017BC67 /* SubscribeAlertView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		71C75E61170FFB3C0017BC67 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E62170FFB3C0017BC67 /* CKAuthViewController.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		71C75E81170FFB910017BC67 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				71C75E9D170FFB910017BC67 /* MBProgressHUD.h */,
+				71C75E9E170FFB910017BC67 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		714FA1EC17138E1D002DA0E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714FA21017138F2B002DA0E4 /* DevNews.h in Headers */,
+				71A3B9EE1714DE9300B98594 /* DevNewsSubscribeViewController.h in Headers */,
+				714FA21117138F3C002DA0E4 /* ChimpKit.h in Headers */,
+				714FA21217138F43002DA0E4 /* DevNewsLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C75E3C170FFADA0017BC67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C75EB8170FFB910017BC67 /* MBProgressHUD.h in Headers */,
+				71BA96521710135900ED1CD3 /* DevNews.h in Headers */,
+				71BA96541710135900ED1CD3 /* DevNewsSubscribeViewController.h in Headers */,
+				71C75E6F170FFB3C0017BC67 /* ChimpKit.h in Headers */,
+				71C75E71170FFB3C0017BC67 /* CKAuthViewController.h in Headers */,
+				71C75E73170FFB3C0017BC67 /* SubscribeAlertView.h in Headers */,
+				714FA17917135EE6002DA0E4 /* DevNewsLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		714FA1EE17138E1D002DA0E4 /* DevNews Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714FA20017138E1D002DA0E4 /* Build configuration list for PBXNativeTarget "DevNews Mac" */;
+			buildPhases = (
+				714FA1EA17138E1D002DA0E4 /* Sources */,
+				714FA1EB17138E1D002DA0E4 /* Frameworks */,
+				714FA1EC17138E1D002DA0E4 /* Headers */,
+				714FA1ED17138E1D002DA0E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DevNews Mac";
+			productName = "DevNews Mac";
+			productReference = 714FA1EF17138E1D002DA0E4 /* DevNews Mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71C75E40170FFADA0017BC67 /* DevNews iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71C75E4F170FFADA0017BC67 /* Build configuration list for PBXNativeTarget "DevNews iOS" */;
+			buildPhases = (
+				71C75E39170FFADA0017BC67 /* ShellScript */,
+				71C75E3A170FFADA0017BC67 /* Sources */,
+				71C75E3B170FFADA0017BC67 /* Frameworks */,
+				71C75E3C170FFADA0017BC67 /* Headers */,
+				71C75E3D170FFADA0017BC67 /* Resources */,
+				71C75E3E170FFADA0017BC67 /* ShellScript */,
+				71C75E3F170FFADA0017BC67 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DevNews iOS";
+			productName = DevNews;
+			productReference = 71C75E41170FFADA0017BC67 /* DevNews.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71C75E35170FFADA0017BC67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Raymond Law";
+			};
+			buildConfigurationList = 71C75E38170FFADA0017BC67 /* Build configuration list for PBXProject "DevNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 71C75E34170FFADA0017BC67;
+			productRefGroup = 71C75E42170FFADA0017BC67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71C75E40170FFADA0017BC67 /* DevNews iOS */,
+				714FA1EE17138E1D002DA0E4 /* DevNews Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		714FA1ED17138E1D002DA0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E2477C1714E0F300B8CF74 /* DevNewsSubscribeWindowController.xib in Resources */,
+				714FA1FB17138E1D002DA0E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C75E3D170FFADA0017BC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C75E4B170FFADA0017BC67 /* InfoPlist.strings in Resources */,
+				71C75E75170FFB3C0017BC67 /* CKAuthViewController.xib in Resources */,
+				71BA96511710135900ED1CD3 /* DevNews_iPhone.storyboard in Resources */,
+				714FA1C417137F6B002DA0E4 /* DevNews_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71C75E39170FFADA0017BC67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		71C75E3E170FFADA0017BC67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		71C75E3F170FFADA0017BC67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		714FA1EA17138E1D002DA0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714FA20D17138F10002DA0E4 /* ChimpKit.m in Sources */,
+				714FA20E17138F10002DA0E4 /* DevNews.m in Sources */,
+				714FA20F17138F10002DA0E4 /* DevNewsLoader.m in Sources */,
+				714FA219171395F2002DA0E4 /* DevNewsSubscribeWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C75E3A170FFADA0017BC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C75E70170FFB3C0017BC67 /* ChimpKit.m in Sources */,
+				71C75E72170FFB3C0017BC67 /* CKAuthViewController.m in Sources */,
+				71C75E74170FFB3C0017BC67 /* SubscribeAlertView.m in Sources */,
+				71C75EB9170FFB910017BC67 /* MBProgressHUD.m in Sources */,
+				71BA96531710135900ED1CD3 /* DevNews.m in Sources */,
+				71BA96551710135900ED1CD3 /* DevNewsSubscribeViewController.m in Sources */,
+				714FA17A17135EE6002DA0E4 /* DevNewsLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		714FA1F917138E1D002DA0E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				714FA1FA17138E1D002DA0E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71C75E49170FFADA0017BC67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71C75E4A170FFADA0017BC67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		714FA20117138E1D002DA0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevNews Mac/DevNews Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "DevNews Mac/DevNews Mac-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		714FA20217138E1D002DA0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevNews Mac/DevNews Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "DevNews Mac/DevNews Mac-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		71C75E4D170FFADA0017BC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		71C75E4E170FFADA0017BC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71C75E50170FFADA0017BC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevNews/DevNews iOS-Prefix.pch";
+				INFOPLIST_FILE = "DevNews/DevNews iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		71C75E51170FFADA0017BC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevNews/DevNews iOS-Prefix.pch";
+				INFOPLIST_FILE = "DevNews/DevNews iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		714FA20017138E1D002DA0E4 /* Build configuration list for PBXNativeTarget "DevNews Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714FA20117138E1D002DA0E4 /* Debug */,
+				714FA20217138E1D002DA0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71C75E38170FFADA0017BC67 /* Build configuration list for PBXProject "DevNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71C75E4D170FFADA0017BC67 /* Debug */,
+				71C75E4E170FFADA0017BC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71C75E4F170FFADA0017BC67 /* Build configuration list for PBXNativeTarget "DevNews iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71C75E50170FFADA0017BC67 /* Debug */,
+				71C75E51170FFADA0017BC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71C75E35170FFADA0017BC67 /* Project object */;
+}
