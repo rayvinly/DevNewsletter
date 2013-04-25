@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Devnewsletter by rayvinly</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Devnewsletter</h1>
+        <h2>DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list.</h2>
+        <a href="https://github.com/rayvinly/DevNewsletter" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>DevNewsletter overview</h1>
+
+<p>DevNewsletter allows your app users to subscribe to your MailChimp mailing list. It uses <a href="https://github.com/kstenerud/iOS-Universal-Framework" title="iOS Universal Framework">kstenerud’s awesome iOS Universal Framework project</a> to build universal frameworks that can be shared between iOS and Mac apps. You can find <a href="http://rayvinly.com/how-to-build-a-truly-universal-framework-for-ios-and-mac-with-just-a-single-codebase/" title="How to build a truly iOS universal framework for iOS and Mac with just a single codebase">more details here</a>. The technique used here was used to build <a href="http://bitly.com/144jLLF" title="DevBase - a database app in the App Store for iOS and Mac app development using Apple's Core Data and SQLite technologies">DevBase</a> - a database app in the <a href="http://bitly.com/14dSgfY" title="DevBase is the Mac App Store">Mac App Store</a> for iOS and Mac app development using Apple's Core Data and SQLite technologies.</p>
+
+<h2>Screenshots</h2>
+
+<p>DevNewsletter works in iPhone, iPad, and Mac apps. In the sample projects, I show how to use the DevNews framework's provided UI (Easy Subscribe) and a custom UI (Custom Subscribe).</p>
+
+<p>The DevNews framework has an iOS component and a Mac component. The iOS component contains separate storyboards for iPhone and iPad that provide a plain-vanilla Apple style subscription form. The Mac component contains a NIB file that provides a default Mac app style subscription form.</p>
+
+<p>To illustrate the visual differences between Easy and Custom subscribes, a colored theme is built for the iOS app and extra information is shown for the Mac app.</p>
+
+<h3>iPhone</h3>
+
+<p><img src="http://rayvinly.com/wp-content/uploads/2013/04/iPhone.png" alt="iPhone | Raymond Law" title="iPhone"></p>
+
+<h3>iPad</h3>
+
+<p><img src="http://rayvinly.com/wp-content/uploads/2013/04/iPad.png" alt="iPad | Raymond Law" title="iPad"></p>
+
+<h3>Mac</h3>
+
+<p><img src="http://rayvinly.com/wp-content/uploads/2013/04/Mac.png" alt="Mac | Raymond Law" title="Mac"></p>
+
+<h1>Details</h1>
+
+<p>There are three directories in this repository:</p>
+
+<ul>
+<li>
+<p><strong>DevNews</strong><br>
+DevNews contains the shared framework Xcode project. It has separate iOS and Mac targets that you need to build and then link to the sample projects. It has the following classes:</p>
+
+<ul>
+<li>
+<strong>DevNewsLoader</strong><br>
+The DevNewsLoader class is where it all begins. When the client app launches, DevNewsLoader is notified by NSNotificationCenter and initializes using the DevNews.plist configuration file supplied by the client app to specify the required parameters such as your MailChimp API key and list ID. It then creates the DevNews singleton object.</li>
+<li>
+<strong>DevNews</strong><br>
+The DevNews class is a singleton class that provides a common API between the client apps and the MailChimp API that is used for both iOS and Mac apps. It has two subscribe methods. A client app can choose to use the framework's provided UI or provide its own UI to subscribe to the mailing list.</li>
+<li>
+<strong>DevNewsSubscribeViewController</strong><br>
+The DevNewsSubscribeViewController class, combined with the storyboards for both iPhone and iPad, implements the framework-provided iOS UI for Easy Subscribe.</li>
+<li>
+<strong>DevNewsSubscribeWindowController</strong><br>
+The DevNewsSubscribeWindowController class and its NIB file implements the framework-provided Mac UI for Easy Subscribe.</li>
+</ul>
+</li>
+<li><p><strong>DevNewsiOS</strong>
+DevNewsiOS is a sample iOS project that integrated the DevNews framework for the iOS platform to subscribe user to a MailChimp newsletter. The SubscribeViewController and its storyboards for both iPhone and iPad implement the Custom Subscribe UI for iOS before asking DevNews to subscribe to a mailing list.</p></li>
+<li><p><strong>DevNewsMac</strong>
+DevNewsMac is a sample iOS project that integrated the DevNews framework for the Mac platform to subscribe user to a MailChimp newsletter. The SubscribeWindowController and its NIB file implement the Custom Subscribe UI for Mac before asking DevNews to subscribe to a mailing list.</p></li>
+</ul><h1>How to run the sample projects</h1>
+
+<ol>
+<li><p>Open the DevNews Xcode project and build for both iOS and Mac targets.</p></li>
+<li><p>Enter your MailChimp API Key and list ID in DevNews.plist for both the DevNewsiOS and DevNewsMac Xcode projects.<br><img src="http://rayvinly.com/wp-content/uploads/2013/04/Plist.png" alt="DevNews.plist | Raymond Law" title="DevNews.plist"></p></li>
+<li><p>Open the DevNewsiOS Xcode project. Re-link the DevNews iOS.embeddedframework. Build and run.<br><img src="http://rayvinly.com/wp-content/uploads/2013/04/DevNews-iOS.embeddedframework.png" alt="DevNews iOS.embeddedframework | Raymond Law" title="DevNews iOS.embeddedframework"></p></li>
+<li><p>Open the DevNewsMac Xcode project. Re-link the DevNews Mac.framework. Build and run.<br><img src="http://rayvinly.com/wp-content/uploads/2013/04/DevNews-Mac.framework.png" alt="DevNews Mac.framework | Raymond Law" title="DevNews Mac.framework"></p></li>
+</ol><p><em>Since the iOS version of the framework distributes resources such as storyboards, it requires the <a href="https://github.com/kstenerud/iOS-Universal-Framework#kinds-of-frameworks" title="Kinds of Frameworks | iOS Universal Framework">embedded framework</a>.</em></p>
+
+<h1>How to use DevNewsletter in your own projects</h1>
+
+<ol>
+<li><p>Build the iOS or Mac version of the DevNews Xcode project.</p></li>
+<li><p>Link the framework for the appropriate platform to your client app following the <em>Use the framework in your app</em> section of this <a href="http://rayvinly.com/how-to-build-a-truly-universal-framework-for-ios-and-mac-with-just-a-single-codebase/" title="Using the Framework">post</a>. Remember to add the <code>-ObjC</code> flag to Other Linker Flags in your app’s build settings.</p></li>
+<li><p>Build and run.</p></li>
+</ol><h1>License</h1>
+
+<p>Copyright © 2013 <a href="http://rayvinly.com/" title="Raymond Law | Rails and iOS entrepreneur with a passion for badminton">Raymond Law</a>. All rights reserved.
+This project is licensed under the <a href="http://opensource.org/licenses/mit-license.php" title="MIT License">MIT License</a>.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/rayvinly/DevNewsletter/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/rayvinly/DevNewsletter/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/rayvinly/DevNewsletter"></a> is maintained by <a href="https://github.com/rayvinly">rayvinly</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-2234863-5");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
