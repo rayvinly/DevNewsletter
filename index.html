@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Devnewsletter : DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list." />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-    <title>Devnewsletter</title>
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Devnewsletter by rayvinly</title>
   </head>
 
   <body>
+    <a id="forkme_banner" href="https://github.com/rayvinly/DevNewsletter">View on GitHub</a>
+    <div class="shell">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/rayvinly/DevNewsletter">View on GitHub</a>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Devnewsletter</h1>
+            <h2>DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-          <h1 id="project_title">Devnewsletter</h1>
-          <h2 id="project_tagline">DevNewsletter allows your iOS and Mac app users to subscribe to your MailChimp mailing list.</h2>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/rayvinly/DevNewsletter/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/rayvinly/DevNewsletter/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/rayvinly/DevNewsletter/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/rayvinly/DevNewsletter/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h1>DevNewsletter overview</h1>
 
 <p>DevNewsletter allows your app users to subscribe to your MailChimp mailing list. It uses <a href="https://github.com/kstenerud/iOS-Universal-Framework" title="iOS Universal Framework">kstenerud’s awesome iOS Universal Framework project</a> to build universal frameworks that can be shared between iOS and Mac apps. You can find <a href="http://rayvinly.com/how-to-build-a-truly-universal-framework-for-ios-and-mac-with-just-a-single-codebase/" title="How to build a truly iOS universal framework for iOS and Mac with just a single codebase">more details here</a>. The technique used here was used to build <a href="http://bitly.com/144jLLF" title="DevBase - a database app in the App Store for iOS and Mac app development using Apple's Core Data and SQLite technologies">DevBase</a> - a database app in the <a href="http://bitly.com/14dSgfY" title="DevBase is the Mac App Store">Mac App Store</a> for iOS and Mac app development using Apple's Core Data and SQLite technologies.</p>
@@ -103,14 +118,19 @@ DevNewsMac is a sample iOS project that integrated the DevNews framework for the
 <p>Copyright © 2013 <a href="http://rayvinly.com/" title="Raymond Law | Rails and iOS entrepreneur with a passion for badminton">Raymond Law</a>. All rights reserved.
 This project is licensed under the <a href="http://opensource.org/licenses/mit-license.php" title="MIT License">MIT License</a>.</p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Devnewsletter maintained by <a href="https://github.com/rayvinly">rayvinly</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/rayvinly">rayvinly</a> can be found on <a href="https://github.com/rayvinly/DevNewsletter">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
 
               <script type="text/javascript">
@@ -123,7 +143,6 @@ This project is licensed under the <a href="http://opensource.org/licenses/mit-l
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
